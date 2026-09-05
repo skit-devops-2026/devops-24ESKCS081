@@ -1453,150 +1453,333 @@ body {
     white-space: nowrap;
 }
 
-/* =========================
+/* =================================
    BOOKING FORM
-========================= */
+================================= */
 
 .booking-form-page {
-    background: #f6f9f7;
-    padding: 50px 20px 70px;
+    min-height: 100vh;
+    padding: 60px 20px;
+
+    background:
+        radial-gradient(circle at top left, #dff3e5, transparent 40%),
+        radial-gradient(circle at bottom right, #ccebd6, transparent 40%),
+        #f1f7f3;
 }
 
+
+/* Main Form Container */
+
 .booking-form-container {
-    max-width: 750px;
+    width: 90%;
+    max-width: 900px;
     margin: auto;
+    
+    background: rgba(255, 255, 255, 0.97);
+    
+    padding: 40px;
+    
+    border-radius: 18px;
+    
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+    
+    border: 1px solid #e0e8e3;
 }
+
+
+/* Heading */
 
 .booking-form-container h1 {
     text-align: center;
+    
     color: #163d29;
-    font-size: 30px;
+    
+    font-size: 32px;
+    
     margin-bottom: 8px;
 }
 
+
+/* Subtitle */
+
 .booking-subtitle {
     text-align: center;
+    
     color: #777;
-    margin-bottom: 30px;
+    
+    font-size: 15px;
+    
+    margin-bottom: 35px;
 }
 
-#bookingForm {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-}
+
+/* =================================
+   FORM SECTIONS
+================================= */
 
 .form-section {
-    margin-bottom: 28px;
+    background: #ffffff;
+    
+    border: 1px solid #e1e8e4;
+    
+    border-radius: 12px;
+    
+    padding: 25px;
+    
+    margin-bottom: 25px;
+    
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
 }
+
+
+/* Section Heading */
 
 .form-section h2 {
     color: #163d29;
-    font-size: 19px;
-    margin-bottom: 18px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    
+    font-size: 20px;
+    
+    margin: 0 0 22px 0;
+    
+    padding-bottom: 12px;
+    
+    border-bottom: 2px solid #e8f1eb;
 }
+
+
+/* =================================
+   GROUND DETAILS
+================================= */
+
+.ground-details {
+    background: #f4f9f6;
+    
+    border: 1px solid #dce8e0;
+    
+    border-radius: 10px;
+    
+    padding: 5px 20px;
+}
+
+
+/* Each Ground Detail */
+
+.detail-row {
+    display: flex;
+    
+    justify-content: space-between;
+    
+    align-items: center;
+    
+    padding: 15px 5px;
+    
+    border-bottom: 1px solid #dfe7e2;
+}
+
+
+/* Remove border from last row */
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+
+/* Left Text */
+
+.detail-row span {
+    color: #777;
+    
+    font-size: 14px;
+    
+    font-weight: 500;
+}
+
+
+/* Right Text */
+
+.detail-row strong {
+    color: #163d29;
+    
+    font-size: 15px;
+}
+
+
+/* =================================
+   LABELS
+================================= */
 
 .form-section label {
     display: block;
-    color: #333;
+    
+    color: #263d30;
+    
     font-size: 14px;
+    
     font-weight: 600;
-    margin-bottom: 7px;
+    
+    margin-bottom: 8px;
 }
+
+
+/* =================================
+   INPUTS & SELECT
+================================= */
 
 .form-section input,
 .form-section select {
     width: 100%;
+    
     box-sizing: border-box;
-
-    padding: 12px;
-
-    margin-bottom: 17px;
-
-    border: 1px solid #ddd;
-    border-radius: 6px;
-
-    outline: none;
-
-    background: white;
-
+    
+    height: 48px;
+    
+    padding: 0 14px;
+    
+    border: 1px solid #d5ded9;
+    
+    border-radius: 8px;
+    
+    background: #ffffff;
+    
+    color: #333;
+    
     font-size: 14px;
+    
+    outline: none;
+    
+    transition: 0.3s ease;
+    
+    margin-bottom: 18px;
 }
+
+
+/* Input Focus */
 
 .form-section input:focus,
 .form-section select:focus {
     border-color: #16833f;
-
-    box-shadow: 0 0 6px rgba(22,131,63,0.2);
+    
+    box-shadow:
+        0 0 0 3px rgba(22, 131, 63, 0.10);
 }
+
+
+/* Placeholder */
+
+.form-section input::placeholder {
+    color: #999;
+}
+
+
+/* =================================
+   DATE & TIME
+================================= */
 
 .form-row {
     display: grid;
-
+    
     grid-template-columns: 1fr 1fr;
-
-    gap: 18px;
+    
+    gap: 25px;
 }
+
+
+/* =================================
+   BOOKING SUMMARY
+================================= */
 
 .booking-summary {
     background: #f1f8f3;
-
-    border-radius: 8px;
-
-    padding: 18px;
-
-    margin-bottom: 22px;
+    
+    border: 1px solid #d7e7dc;
+    
+    border-radius: 12px;
+    
+    padding: 20px 25px;
+    
+    margin-bottom: 25px;
 }
+
+
+/* Summary Rows */
 
 .booking-summary div {
     display: flex;
-
+    
     justify-content: space-between;
-
-    padding: 7px 0;
+    
+    align-items: center;
+    
+    padding: 10px 0;
 }
+
+
+/* Summary Text */
 
 .booking-summary span {
     color: #666;
+    
+    font-size: 14px;
 }
+
+
+/* Summary Price */
 
 .booking-summary strong {
-    color: #163d29;
-
-    font-size: 17px;
+    color: #16833f;
+    
+    font-size: 18px;
 }
+
+
+/* Total Amount */
+
+.booking-summary div:last-child {
+    border-top: 1px solid #d7e3db;
+    
+    margin-top: 8px;
+    
+    padding-top: 15px;
+}
+
+
+/* =================================
+   CONFIRM BOOKING BUTTON
+================================= */
 
 .confirm-booking {
     width: 100%;
-
-    padding: 13px;
-
+    
+    height: 50px;
+    
     border: none;
-
-    border-radius: 6px;
-
+    
+    border-radius: 8px;
+    
     background: #16833f;
-
+    
     color: white;
-
+    
     font-size: 16px;
-
+    
     font-weight: 600;
-
+    
     cursor: pointer;
-
+    
     transition: 0.3s ease;
 }
 
+
+/* Button Hover */
+
 .confirm-booking:hover {
     background: #0d5c2c;
-
-    box-shadow: 0 0 14px rgba(22,131,63,0.4);
-
-    transform: translateY(-1px);
+    
+    box-shadow:
+        0 7px 18px rgba(22, 131, 63, 0.25);
+    
+    transform: translateY(-2px);
 }
 
 
