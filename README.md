@@ -13,6 +13,7 @@ Sports Ground and Turf Booking System is a web-based application designed to mak
 
 - Frontend: HTML, CSS, JavaScript
 - Backend: None (frontend only)
+- database: none
 
 
 ## Running locally
