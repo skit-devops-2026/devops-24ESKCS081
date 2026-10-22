@@ -1,12 +1,14 @@
 # Deployment notes - PlayBook (24ESKCS081)
 
 ## Live deployment (GitHub Pages)
-- URL: https://skit-devops-2026.github.io/devops-24ESKCS081/
-- How: `.github/workflows/pages.yml` runs on every push to `main`, copies the static
-  site into `_site/`, writes a `health` file containing the commit SHA, and deploys
-  with GitHub Pages.
-- One-time setup: Repo Settings -> Pages -> Build and deployment -> Source:
-  "GitHub Actions". (Org admin may need to do this if the option is locked.)
+- URL: https://b240847.github.io/playbook-live/
+- How: Pages is admin-locked on this organisation repository (the student account
+  has write access but no access to repository options, and the Pages workflow
+  token cannot create a Pages site). The site is therefore deployed from the
+  author's personal repository https://github.com/B240847/playbook-live
+  (GitHub Pages, branch `main`, root folder), which serves the identical static
+  files from this repo. `.github/workflows/pages.yml` in this repo will deploy
+  to the org Pages URL automatically if an org admin enables Pages here.
 - Screenshot of the running site: `docs/deployment-screenshot.png`
 
 ## Container deployment (Docker)
