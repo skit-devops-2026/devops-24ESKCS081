@@ -41,7 +41,7 @@ docker compose up --build
 
 ## Live URL
 
-https://skit-devops-2026.github.io/devops-24ESKCS081/
+https://b240847.github.io/playbook-live/
 
 ## Health endpoint
 
