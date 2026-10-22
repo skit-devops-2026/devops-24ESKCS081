@@ -41,6 +41,8 @@ docker compose up --build
 
 ## Live URL
 
+[Visit the live PlayBook site](https://b240847.github.io/playbook-live/)
+
 https://b240847.github.io/playbook-live/
 
 ## Health endpoint
@@ -49,7 +51,7 @@ https://b240847.github.io/playbook-live/
 
 ## Container registry
 
-The CI workflow publishes `ghcr.io/skit-devops-2026/devops-24eskcs081:latest` and a commit-specific image tag after a successful push to `main`.
+The CI workflow publishes `ghcr.io/skit-devops-2026/devops-24eskcs081:latest` and a commit-specific image tag after a successful push to `main`. Package: https://github.com/orgs/skit-devops-2026/packages/container/devops-24eskcs081
 
 ## Kubernetes
 
