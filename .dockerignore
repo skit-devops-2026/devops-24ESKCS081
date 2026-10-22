@@ -1,0 +1,10 @@
+.git
+.github
+k8s
+monitoring
+docs
+scripts
+tests
+*.md
+Makefile
+docker-compose.yml
